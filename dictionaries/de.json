@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "title": "Vila Irena · Steinhaus mit Pool · Bruška, Dalmatien",
+    "description": "Steinvilla mit privatem Pool in Bruška bei Zadar: zwei traditionelle dalmatinische Häuser auf einem umzäunten 1.600 m² Anwesen. Ferienhaus für 8 Gäste, Haustiere willkommen. Direkt beim Gastgeber buchen."
+  },
+  "langNames": {
+    "en": "English",
+    "hr": "Hrvatski",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "Das Anwesen",
+    "gallery": "Galerie",
+    "amenities": "Ausstattung",
+    "reviews": "Bewertungen",
+    "location": "Lage",
+    "faq": "FAQ",
+    "cta": "Verfügbarkeit prüfen"
+  },
+  "hero": {
+    "eyebrow": "Bruška · Dalmatinisches Hinterland",
+    "title": "Ein steinernes Refugium unter dalmatinischer Sonne",
+    "subtitle": "Zwei traditionelle Steinhäuser, ein privater Pool und 1.600 m² umfriedete Ruhe, nur eine kurze Fahrt von Zadar, den Stränden und vier Nationalparks entfernt.",
+    "cta": "Verfügbarkeit prüfen",
+    "ctaSecondary": "Haus entdecken",
+    "rating": "5,0",
+    "ratingLabel": "von Gästen bewertet",
+    "reviews": "23 Bewertungen",
+    "superhost": "Superhost-Gastgeber"
+  },
+  "facts": {
+    "guests": "8 Gäste",
+    "bedrooms": "2 Schlafzimmer",
+    "bathrooms": "2 Badezimmer",
+    "pool": "32 m² Pool",
+    "estate": "1.600 m² Anwesen",
+    "pets": "Haustiere willkommen"
+  },
+  "about": {
+    "eyebrow": "Das Anwesen",
+    "title": "Zwei Steinhäuser, eine dalmatinische Geschichte",
+    "p1": "Die Vila Irena besteht aus zwei traditionellen dalmatinischen Steinhäusern auf einem vollständig umzäunten 1.600 m² Anwesen. Im Inneren verbinden sich Stein und Holz mit viel Sorgfalt, um den Geist des alten Dalmatien zu bewahren: 90 m² Wohnfläche mit zwei Schlafzimmern, Wohnzimmer, Esszimmer, voll ausgestatteter Küche und zwei Badezimmern.",
+    "p2": "Draußen gehört der Tag dem saisonalen 32 m² Pool, den Sonnenliegen, dem Kinderspielplatz und dem großen überdachten Grillplatz mit eigenem Esstisch im Freien. Trockenmauern, Olivenbäume und ein Biogarten umgeben alles, exklusiv für die Gäste reserviert.",
+    "hostNote": "Ihre Gastgeber wohnen nebenan und achten auf Ihre Privatsphäre, sind aber für eine andere Gewohnheit bekannt: Sie begrüßen Gäste mit eigenem Obst, frischen Eiern und Gemüse aus dem eigenen Garten."
+  },
+  "gallery": {
+    "eyebrow": "Galerie",
+    "title": "Schauen Sie sich um",
+    "viewPhoto": "Foto ansehen",
+    "close": "Schließen",
+    "previous": "Vorheriges Foto",
+    "next": "Nächstes Foto",
+    "counter": "{current} von {total}",
+    "alt": {
+      "exterior": "Außenansicht des Steinhauses der Vila Irena",
+      "pool": "Privater Pool der Vila Irena",
+      "interior": "Wohnbereich der Vila Irena",
+      "bedroom": "Schlafzimmer der Vila Irena",
+      "bbq": "Überdachter Grillplatz mit Essbereich der Vila Irena",
+      "surroundings": "Garten und Umgebung der Vila Irena"
+    }
+  },
+  "amenities": {
+    "eyebrow": "Ausstattung",
+    "title": "Alles, was ein langsamer Sommer braucht",
+    "items": {
+      "pool": {
+        "title": "Privater 32 m² Pool",
+        "desc": "Saisonal, geöffnet von April bis Oktober, mit Sonnenliegen."
+      },
+      "bbq": {
+        "title": "Überdachter Grillplatz",
+        "desc": "Großer Grillbereich mit eigenem Esstisch im Freien."
+      },
+      "kitchen": {
+        "title": "Voll ausgestattete Küche",
+        "desc": "Komplett eingerichtet, mit Geschirrspüler und allem zum Selberkochen."
+      },
+      "ac": {
+        "title": "Klimaanlage",
+        "desc": "Kühle Räume nach einem Tag in der dalmatinischen Sonne."
+      },
+      "wifi": {
+        "title": "WLAN",
+        "desc": "Zuverlässiges Internet auf dem ganzen Anwesen."
+      },
+      "parking": {
+        "title": "Kostenloser Parkplatz",
+        "desc": "Privater Parkplatz innerhalb des umzäunten Grundstücks."
+      },
+      "pets": {
+        "title": "Haustiere willkommen",
+        "desc": "Ihre vierbeinige Familie reist einfach mit."
+      },
+      "playground": {
+        "title": "Kinderspielplatz",
+        "desc": "Ein sicherer, umzäunter Ort, an dem Kinder frei spielen können."
+      },
+      "family": {
+        "title": "Familienfreundlich",
+        "desc": "Babybett und Hochstuhl inklusive, Waschmaschine vorhanden."
+      }
+    }
+  },
+  "reviews": {
+    "eyebrow": "Gästestimmen",
+    "title": "Mit 5,0 bewertet von Gästen, die hier waren",
+    "summary": "Basierend auf 23 Airbnb-Bewertungen · Von Gästen ausgewählt",
+    "translatedNote": "Aus der Originalbewertung übersetzt",
+    "items": [
+      {
+        "name": "Carolin",
+        "origin": "Deutschland",
+        "date": "Juli 2025",
+        "text": "Es war noch schöner als auf den Fotos. Alles ist mit viel Liebe eingerichtet, sehr sauber und gemütlich. Die Gastgeber waren unglaublich herzlich, und der Grillabend, den sie für uns organisiert haben, war etwas Besonderes. Wer einen ruhigen, erholsamen Familienurlaub sucht, ist hier genau richtig."
+      },
+      {
+        "name": "Tobias",
+        "origin": "Schweiz",
+        "date": "Juli 2025",
+        "text": "Die Besitzer waren sehr freundlich. Bei der Ankunft erwartete uns ein Tablett voller kleiner Sandwiches. Der Pool ist sauber und lädt jederzeit zum Schwimmen ein, und der überdachte Grillplatz mit dem großen Esstisch hat uns am meisten beeindruckt. Wir würden Bruška wieder wählen."
+      }
+    ]
+  },
+  "location": {
+    "eyebrow": "Wo Sie sein werden",
+    "title": "Die stille Seite Dalmatiens",
+    "description": "Bruška liegt im Hinterland von Zadar, zwischen Trockenmauern und Olivenhainen, fern vom Trubel der Küste und doch nah genug für einen Sprung ins Meer. Die Strände von Zadar, die Inseln und vier Nationalparks sind bequem mit dem Auto erreichbar.",
+    "mapCta": "Karte laden",
+    "mapNote": "Die Karte wird erst nach Ihrem Klick von Google Maps geladen.",
+    "mapTitle": "Karte von Bruška, Kroatien",
+    "attractions": [
+      {
+        "title": "Asseria",
+        "desc": "Die stillen Ruinen einer römischen Stadt, gleich die Straße hinunter bei Benkovac."
+      },
+      {
+        "title": "Kličevica-Wasserfälle",
+        "desc": "Eine versteckte Flussschlucht mit Wasserfällen für heiße Sommertage."
+      },
+      {
+        "title": "Themenweg Bruška–Medviđa",
+        "desc": "Ein Themenweg durch die Traditionen des Hinterlands."
+      },
+      {
+        "title": "Markt von Benkovac",
+        "desc": "Ein authentischer dalmatinischer Marktmorgen, wie er früher einmal war."
+      },
+      {
+        "title": "Nationalparks",
+        "desc": "Krka, Plitvice, Paklenica und Kornati, alle als Tagesausflug erreichbar."
+      },
+      {
+        "title": "Zadar & die Küste",
+        "desc": "Römisches Forum, die Meeresorgel und die Strände der Riviera."
+      }
+    ]
+  },
+  "booking": {
+    "eyebrow": "Aufenthalt buchen",
+    "title": "Verfügbarkeit prüfen",
+    "subtitle": "Wählen Sie Ihre Daten und senden Sie eine Anfrage. Ihre Gastgeberin bestätigt persönlich per E-Mail, meist innerhalb weniger Stunden. Keine Online-Zahlung, keine Buchungsgebühren.",
+    "legendFree": "Frei",
+    "legendBlocked": "Belegt",
+    "legendSelected": "Ihr Aufenthalt",
+    "loading": "Verfügbarkeit wird geladen…",
+    "error": "Der Kalender konnte nicht geladen werden.",
+    "retry": "Erneut versuchen",
+    "prevMonth": "Vorheriger Monat",
+    "nextMonth": "Nächster Monat",
+    "hintCheckIn": "Wählen Sie Ihr Anreisedatum",
+    "hintCheckOut": "Wählen Sie jetzt Ihr Abreisedatum",
+    "minStayNote": "Mindestaufenthalt: {n} Nächte.",
+    "checkIn": "Anreise",
+    "checkOut": "Abreise",
+    "nightOne": "{n} Nacht",
+    "nightFew": "{n} Nächte",
+    "nightOther": "{n} Nächte",
+    "clear": "Daten löschen",
+    "availabilityNote": "Der Kalender ist mit unseren Buchungsplattformen synchronisiert und dient zur Orientierung; jede Reservierung wird persönlich per E-Mail bestätigt."
+  },
+  "form": {
+    "title": "Buchungsanfrage senden",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "guests": "Gäste",
+    "guestsSuffix": "Gäste",
+    "message": "Nachricht (optional)",
+    "messagePlaceholder": "Sagen Sie uns, was wir wissen sollten: Ankunftszeit, Kinder, Haustiere…",
+    "datesRequired": "Wählen Sie zuerst Ihre Daten im Kalender oben.",
+    "consent": "Ich bin einverstanden, dass meine Daten zur Beantwortung dieser Anfrage verwendet werden, wie in der {privacyLink} beschrieben.",
+    "privacyLinkLabel": "Datenschutzerklärung",
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet…",
+    "errorName": "Bitte geben Sie Ihren Namen ein.",
+    "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "errorConsent": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+    "errorRateLimited": "Zu viele Anfragen. Bitte versuchen Sie es in einigen Minuten erneut.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt."
+  },
+  "success": {
+    "title": "Anfrage gesendet",
+    "body": "Vielen Dank! Ihre Anfrage ist unterwegs. Sie erhalten eine Antwort per E-Mail, meist innerhalb weniger Stunden, spätestens innerhalb von 24.",
+    "again": "Weitere Anfrage senden"
+  },
+  "faq": {
+    "eyebrow": "Gut zu wissen",
+    "title": "Fragen, die Gäste stellen",
+    "items": [
+      {
+        "q": "Wann sind Check-in und Check-out?",
+        "a": "Check-in ist zwischen 15:00 und 23:00 Uhr, Check-out bis 10:00 Uhr. Falls Sie andere Zeiten brauchen, erwähnen Sie es in Ihrer Anfrage und wir tun unser Bestes."
+      },
+      {
+        "q": "Wann ist der Pool geöffnet?",
+        "a": "Der 32 m² Pool ist saisonal und vom 1. April bis 31. Oktober geöffnet."
+      },
+      {
+        "q": "Sind Haustiere willkommen?",
+        "a": "Ja, Haustiere sind willkommen. Sagen Sie uns in Ihrer Anfrage einfach, wer mitkommt."
+      },
+      {
+        "q": "Wie funktioniert die Buchung? Zahle ich online?",
+        "a": "Sie senden eine Anfrage mit Ihren Daten, und Ihre Gastgeberin bestätigt Verfügbarkeit und Zahlungsdetails persönlich per E-Mail. Auf dieser Website gibt es keine Online-Zahlung und keine Buchungsgebühren."
+      },
+      {
+        "q": "Ist der Kalender immer aktuell?",
+        "a": "Der Kalender synchronisiert sich mehrmals täglich mit unseren Buchungsplattformen, verstehen Sie ihn daher als Orientierung. Jede Reservierung wird persönlich bestätigt, bevor sie verbindlich ist."
+      },
+      {
+        "q": "Wie kommen wir hin?",
+        "a": "Bruška liegt im Hinterland von Zadar und ist am einfachsten mit dem Auto zu erreichen. Der Flughafen Zadar ist etwa 40 Fahrminuten entfernt, genaue Anfahrtshinweise senden wir mit der Bestätigung. Flughafentransfers und Ausflüge organisieren wir auf Anfrage."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Zwei Steinhäuser, ein Pool und 1.600 m² dalmatinische Ruhe. Vila Irena ist eine traditionelle Steinvilla mit privatem Pool in Bruška, im Hinterland von Zadar: ein ruhiger Urlaub für Familien und Gruppen bis zu 8 Gästen, nur eine kurze Fahrt von den Nationalparks Krka, Plitvice und Kornati und den Stränden der Adria entfernt.",
+    "contactTitle": "Kontakt",
+    "contactNote": "Am schnellsten erreichen Sie uns über das Anfrageformular oben.",
+    "airbnb": "Besuchen Sie uns auf Airbnb",
+    "exploreTitle": "Entdecken",
+    "languageTitle": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "rights": "Alle Rechte vorbehalten.",
+    "creditPrefix": "Design von",
+    "creditName": "Fraviz Studio"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "updated": "Zuletzt aktualisiert: Juni 2026",
+    "backHome": "Zurück zur Startseite",
+    "sections": [
+      {
+        "h": "Welche Daten wir erheben",
+        "p": "Wenn Sie eine Buchungsanfrage senden, erheben wir die Daten, die Sie in das Formular eingeben: Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer (falls angegeben), die Anzahl der Gäste, Ihre Reisedaten und Ihre Nachricht."
+      },
+      {
+        "h": "Warum wir sie erheben",
+        "p": "Die Daten werden ausschließlich zu einem Zweck verwendet: um Ihre Anfrage zu beantworten und Ihren Aufenthalt zu organisieren. Wir versenden keine Newsletter und verkaufen oder teilen Ihre Daten nicht zu Marketingzwecken mit Dritten."
+      },
+      {
+        "h": "Wohin die Daten gehen",
+        "p": "Ihre Anfrage wird über einen transaktionalen E-Mail-Dienst an das E-Mail-Postfach der Gastgeber zugestellt. Diese Website speichert die Daten in keiner Datenbank."
+      },
+      {
+        "h": "Wie lange wir sie aufbewahren",
+        "p": "Anfrage-E-Mails werden so lange aufbewahrt, wie es für die Organisation und Dokumentation Ihres Aufenthalts nötig ist, und danach auf Wunsch gelöscht."
+      },
+      {
+        "h": "Ihre Rechte",
+        "p": "Nach der DSGVO können Sie jederzeit Auskunft über Ihre personenbezogenen Daten sowie deren Berichtigung oder Löschung verlangen, indem Sie auf eine beliebige E-Mail von uns antworten."
+      }
+    ]
+  }
+}

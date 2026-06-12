@@ -1,0 +1,89 @@
+import type { Metadata } from "next";
+import { Source_Serif_4, Inter } from "next/font/google";
+import { notFound } from "next/navigation";
+import { locales, isLocale, type Locale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
+import "../globals.css";
+
+// Source Serif 4 (Adobe): clean Central-European diacritics (č/ć/đ/š/ž render
+// attached, unlike Cormorant Garamond's detached carons) and strong readability.
+// Headings render at 500-600; italic 500 for the About blockquote.
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const dict = await getDictionary(locale);
+
+  return {
+    metadataBase: new URL(siteUrl),
+    title: dict.meta.title,
+    description: dict.meta.description,
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        hr: "/hr",
+        de: "/de",
+        "x-default": "/en",
+      },
+    },
+    openGraph: {
+      type: "website",
+      siteName: "Vila Irena",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      url: `/${locale}`,
+      images: [{ url: "/og.jpg", width: 1200, height: 630 }],
+      locale,
+      alternateLocale: locales.filter((l) => l !== locale),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      images: ["/og.jpg"],
+    },
+  };
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  return (
+    <html lang={locale} className={`${sourceSerif.variable} ${inter.variable}`}>
+      <body>{children}</body>
+    </html>
+  );
+}
+
+export type { Locale };

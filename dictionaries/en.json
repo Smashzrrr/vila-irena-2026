@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "title": "Vila Irena · Stone Country House with Pool · Bruška, Dalmatia",
+    "description": "Stone villa with a private pool in Bruška, near Zadar: two traditional Dalmatian houses on a walled 1,600 m² estate. Sleeps 8, pets welcome. Book directly with the host."
+  },
+  "langNames": {
+    "en": "English",
+    "hr": "Hrvatski",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "The estate",
+    "gallery": "Gallery",
+    "amenities": "Amenities",
+    "reviews": "Reviews",
+    "location": "Location",
+    "faq": "FAQ",
+    "cta": "Check availability"
+  },
+  "hero": {
+    "eyebrow": "Bruška · Dalmatian hinterland",
+    "title": "A stone hideaway under the Dalmatian sun",
+    "subtitle": "Two traditional stone houses, a private pool and 1,600 m² of walled-in peace, an easy drive from Zadar, the beaches and four national parks.",
+    "cta": "Check availability",
+    "ctaSecondary": "Explore the house",
+    "rating": "5.0",
+    "ratingLabel": "rated by guests",
+    "reviews": "23 reviews",
+    "superhost": "Superhost hosting"
+  },
+  "facts": {
+    "guests": "8 guests",
+    "bedrooms": "2 bedrooms",
+    "bathrooms": "2 bathrooms",
+    "pool": "32 m² pool",
+    "estate": "1,600 m² estate",
+    "pets": "Pets welcome"
+  },
+  "about": {
+    "eyebrow": "The estate",
+    "title": "Two stone houses, one Dalmatian story",
+    "p1": "Vila Irena is made of two traditional Dalmatian stone houses on a fully fenced 1,600 m² estate. Inside, stone and wood are combined with care to keep the spirit of old Dalmatia: 90 m² of living space with two bedrooms, a living room, a dining room, a fully equipped kitchen and two bathrooms.",
+    "p2": "Outside, the day belongs to the seasonal 32 m² pool, the sun loungers, the children's playground and a large covered barbecue with its own outdoor dining table. Dry stone walls, olive trees and an organic garden surround it all, reserved exclusively for guests.",
+    "hostNote": "Your hosts live next door and guard your privacy, though they are famous for another habit: welcoming guests with homegrown fruit, fresh eggs and vegetables from their own garden."
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Take a look around",
+    "viewPhoto": "View photo",
+    "close": "Close",
+    "previous": "Previous photo",
+    "next": "Next photo",
+    "counter": "{current} of {total}",
+    "alt": {
+      "exterior": "Stone house exterior at Vila Irena",
+      "pool": "Private pool at Vila Irena",
+      "interior": "Interior living space at Vila Irena",
+      "bedroom": "Bedroom at Vila Irena",
+      "bbq": "Covered barbecue and outdoor dining area at Vila Irena",
+      "surroundings": "Garden and surroundings of Vila Irena"
+    }
+  },
+  "amenities": {
+    "eyebrow": "Amenities",
+    "title": "Everything a slow summer needs",
+    "items": {
+      "pool": {
+        "title": "Private 32 m² pool",
+        "desc": "Seasonal, open April through October, with sun loungers."
+      },
+      "bbq": {
+        "title": "Covered barbecue",
+        "desc": "A large grill area with its own outdoor dining table."
+      },
+      "kitchen": {
+        "title": "Full kitchen",
+        "desc": "Fully equipped, with dishwasher and everything for home cooking."
+      },
+      "ac": {
+        "title": "Air conditioning",
+        "desc": "Cool rooms after a day in the Dalmatian sun."
+      },
+      "wifi": {
+        "title": "Wi-Fi",
+        "desc": "Reliable internet across the estate."
+      },
+      "parking": {
+        "title": "Free parking",
+        "desc": "Private parking inside the fenced property."
+      },
+      "pets": {
+        "title": "Pets welcome",
+        "desc": "Your four-legged family travels with you."
+      },
+      "playground": {
+        "title": "Children's playground",
+        "desc": "A safe, fenced place for kids to roam free."
+      },
+      "family": {
+        "title": "Family ready",
+        "desc": "Baby crib and high chair included, washer on site."
+      }
+    }
+  },
+  "reviews": {
+    "eyebrow": "Guest stories",
+    "title": "Rated 5.0 by the people who stayed",
+    "summary": "Based on 23 Airbnb reviews · Guest favourite",
+    "translatedNote": "Translated from the original review",
+    "items": [
+      {
+        "name": "Carolin",
+        "origin": "Germany",
+        "date": "July 2025",
+        "text": "It was even more beautiful than the photos. Everything is arranged with so much love, very clean and comfortable. The hosts were incredibly warm, and the barbecue evening they organised for us was special. If you are looking for a calm, relaxing family holiday, this is the place."
+      },
+      {
+        "name": "Tobias",
+        "origin": "Switzerland",
+        "date": "July 2025",
+        "text": "The owners were very kind. On arrival a tray full of small sandwiches was waiting for us. The pool is clean and invites you to swim at any time, and the covered barbecue area with its big dining table impressed us most. We would choose Bruška again."
+      }
+    ]
+  },
+  "location": {
+    "eyebrow": "Where you'll be",
+    "title": "The quiet side of Dalmatia",
+    "description": "Bruška sits in the Zadar hinterland, between dry stone walls and olive groves, far from the coastal crowds yet close enough for a swim. The beaches of Zadar, the islands and four national parks are all within an easy drive.",
+    "mapCta": "Load map",
+    "mapNote": "The map loads from Google Maps only after you click.",
+    "mapTitle": "Map of Bruška, Croatia",
+    "attractions": [
+      {
+        "title": "Asseria",
+        "desc": "The quiet ruins of a Roman city, just down the road near Benkovac."
+      },
+      {
+        "title": "Kličevica waterfalls",
+        "desc": "A hidden river canyon with waterfalls for hot summer days."
+      },
+      {
+        "title": "Bruška–Medviđa heritage road",
+        "desc": "A themed walking road through the traditions of the hinterland."
+      },
+      {
+        "title": "Benkovac market",
+        "desc": "An authentic Dalmatian market morning, the way it used to be."
+      },
+      {
+        "title": "National parks",
+        "desc": "Krka, Plitvice, Paklenica and Kornati, all reachable as day trips."
+      },
+      {
+        "title": "Zadar & the coast",
+        "desc": "Roman forum, the Sea Organ and the beaches of the riviera."
+      }
+    ]
+  },
+  "booking": {
+    "eyebrow": "Book your stay",
+    "title": "Check availability",
+    "subtitle": "Pick your dates, send an inquiry, and your host will confirm personally by email, usually within a few hours. No online payment, no booking fees.",
+    "legendFree": "Available",
+    "legendBlocked": "Booked",
+    "legendSelected": "Your stay",
+    "loading": "Loading availability…",
+    "error": "We couldn't load the calendar.",
+    "retry": "Try again",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "hintCheckIn": "Select your check-in date",
+    "hintCheckOut": "Now select your check-out date",
+    "minStayNote": "Minimum stay is {n} nights.",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "nightOne": "{n} night",
+    "nightFew": "{n} nights",
+    "nightOther": "{n} nights",
+    "clear": "Clear dates",
+    "availabilityNote": "The calendar is synced with our booking platforms and is indicative; every reservation is confirmed personally by email."
+  },
+  "form": {
+    "title": "Send a booking inquiry",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "guests": "Guests",
+    "guestsSuffix": "guests",
+    "message": "Message (optional)",
+    "messagePlaceholder": "Tell us anything we should know: arrival time, kids, pets…",
+    "datesRequired": "Select your dates in the calendar above first.",
+    "consent": "I agree that my data is used to answer this inquiry, as described in the {privacyLink}.",
+    "privacyLinkLabel": "privacy policy",
+    "submit": "Send inquiry",
+    "submitting": "Sending…",
+    "errorName": "Please enter your name.",
+    "errorEmail": "Please enter a valid email address.",
+    "errorConsent": "Please accept the privacy policy.",
+    "errorRateLimited": "Too many requests. Please try again in a few minutes.",
+    "errorGeneric": "Something went wrong. Please try again or email us directly."
+  },
+  "success": {
+    "title": "Inquiry sent",
+    "body": "Thank you! Your inquiry is on its way. You will hear back by email, usually within a few hours and always within 24.",
+    "again": "Send another inquiry"
+  },
+  "faq": {
+    "eyebrow": "Good to know",
+    "title": "Questions guests ask",
+    "items": [
+      {
+        "q": "What are the check-in and check-out times?",
+        "a": "Check-in is between 15:00 and 23:00, check-out by 10:00. If you need different times, mention it in your inquiry and we will do our best."
+      },
+      {
+        "q": "When is the pool open?",
+        "a": "The 32 m² pool is seasonal and open from 1 April to 31 October."
+      },
+      {
+        "q": "Are pets welcome?",
+        "a": "Yes, pets are welcome. Just let us know in your inquiry who is coming along."
+      },
+      {
+        "q": "How does booking work? Do I pay online?",
+        "a": "You send an inquiry with your dates, and your host confirms availability and payment details personally by email. There is no online payment on this website and no booking fees."
+      },
+      {
+        "q": "Is the calendar always up to date?",
+        "a": "The calendar syncs with our booking platforms several times a day, so treat it as indicative. Every reservation is confirmed personally before anything is final."
+      },
+      {
+        "q": "How do I get there?",
+        "a": "Bruška is in the Zadar hinterland, easiest to reach by car. Zadar airport is about a 40-minute drive, and we will send exact directions with your confirmation. Airport transfers and trips can be arranged on request."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Two stone houses, a pool and 1,600 m² of Dalmatian peace. Vila Irena is a traditional stone villa with a private pool in Bruška, the Zadar hinterland: a calm holiday for families and groups of up to 8 guests, a short drive from the Krka, Plitvice and Kornati national parks and the Adriatic beaches.",
+    "contactTitle": "Contact",
+    "contactNote": "The fastest way to reach us is the inquiry form above.",
+    "airbnb": "See us on Airbnb",
+    "exploreTitle": "Explore",
+    "languageTitle": "Language",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved.",
+    "creditPrefix": "Design by",
+    "creditName": "Fraviz Studio"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: June 2026",
+    "backHome": "Back to homepage",
+    "sections": [
+      {
+        "h": "What data we collect",
+        "p": "When you send a booking inquiry we collect the data you enter in the form: your name, email address, phone number if provided, the number of guests, your travel dates and your message."
+      },
+      {
+        "h": "Why we collect it",
+        "p": "The data is used for one purpose only: to answer your inquiry and arrange your stay. We do not send newsletters, we do not sell or share your data with third parties for marketing."
+      },
+      {
+        "h": "Where it goes",
+        "p": "Your inquiry is delivered to the host's email inbox through a transactional email service. It is not stored in any database by this website."
+      },
+      {
+        "h": "How long we keep it",
+        "p": "Inquiry emails are kept as long as needed to arrange and document your stay, and deleted afterwards on request."
+      },
+      {
+        "h": "Your rights",
+        "p": "Under the GDPR you may request access to, correction of, or deletion of your personal data at any time by replying to any email from us."
+      }
+    ]
+  }
+}

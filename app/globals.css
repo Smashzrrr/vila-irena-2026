@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* Rustic-premium Mediterranean palette */
+  --color-cream: #faf7f2;
+  --color-sand: #f2ece2;
+  --color-sand-deep: #e8dfd0;
+  --color-stone: #d9cfbf;
+  --color-ink: #2b2722;
+  --color-ink-soft: #5c554b;
+  --color-ink-faint: #8a8174;
+  --color-olive: #6b7a4f;
+  --color-olive-deep: #55633e;
+  --color-olive-ink: #454f31;
+  --color-olive-tint: #eef0e7;
+  --color-terracotta: #b96a47;
+  --color-terracotta-tint: #f6e9e2;
+
+  /* Typography (variables wired via next/font in layout) */
+  --font-display: var(--font-serif), "Source Serif 4", Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  /* Motion */
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Shadows: warm, soft, never harsh */
+  --shadow-card: 0 6px 24px -8px rgb(43 39 34 / 0.12), 0 2px 6px -2px rgb(43 39 34 / 0.08);
+  --shadow-card-hover: 0 16px 40px -12px rgb(43 39 34 / 0.18), 0 4px 10px -4px rgb(43 39 34 / 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-olive);
+  color: var(--color-cream);
+}
+
+/* Anchor sections clear the sticky header */
+section[id] {
+  scroll-margin-top: 84px;
+}

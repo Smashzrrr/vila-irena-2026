@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "title": "Vila Irena · Kamena kuća s bazenom · Bruška, Dalmacija",
+    "description": "Kamena vila s privatnim bazenom u Bruškoj kraj Zadra: dvije tradicionalne dalmatinske kuće na ograđenom imanju od 1.600 m². Smještaj za 8 gostiju, ljubimci dobrodošli. Rezervirajte izravno kod domaćina."
+  },
+  "langNames": {
+    "en": "English",
+    "hr": "Hrvatski",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "about": "Imanje",
+    "gallery": "Galerija",
+    "amenities": "Sadržaji",
+    "reviews": "Recenzije",
+    "location": "Lokacija",
+    "faq": "Pitanja",
+    "cta": "Provjeri dostupnost"
+  },
+  "hero": {
+    "eyebrow": "Bruška · Dalmatinska zagora",
+    "title": "Kameno utočište pod dalmatinskim suncem",
+    "subtitle": "Dvije tradicionalne kamene kuće, privatni bazen i 1.600 m² ograđenog mira, na kratkoj vožnji od Zadra, plaža i četiri nacionalna parka.",
+    "cta": "Provjeri dostupnost",
+    "ctaSecondary": "Razgledaj kuću",
+    "rating": "5,0",
+    "ratingLabel": "ocjena gostiju",
+    "reviews": "23 recenzije",
+    "superhost": "Superhost domaćini"
+  },
+  "facts": {
+    "guests": "8 gostiju",
+    "bedrooms": "2 spavaće sobe",
+    "bathrooms": "2 kupaonice",
+    "pool": "Bazen 32 m²",
+    "estate": "Imanje 1.600 m²",
+    "pets": "Ljubimci dobrodošli"
+  },
+  "about": {
+    "eyebrow": "Imanje",
+    "title": "Dvije kamene kuće, jedna dalmatinska priča",
+    "p1": "Vilu Irenu čine dvije tradicionalne dalmatinske kamene kuće na potpuno ograđenom imanju od 1.600 m². U unutrašnjosti su kamen i drvo pažljivo spojeni kako bi sačuvali duh stare Dalmacije: 90 m² stambenog prostora s dvije spavaće sobe, dnevnim boravkom, blagovaonicom, potpuno opremljenom kuhinjom i dvije kupaonice.",
+    "p2": "Vani dan pripada sezonskom bazenu od 32 m², ležaljkama, dječjem igralištu i velikom natkrivenom roštilju s vlastitim vanjskim stolom za blagovanje. Sve okružuju suhozidi, masline i organski vrt, rezervirani isključivo za goste.",
+    "hostNote": "Vaši domaćini žive u susjedstvu i čuvaju vašu privatnost, no poznati su po jednoj drugoj navici: goste dočekuju domaćim voćem, svježim jajima i povrćem iz vlastitog vrta."
+  },
+  "gallery": {
+    "eyebrow": "Galerija",
+    "title": "Razgledajte imanje",
+    "viewPhoto": "Pogledaj fotografiju",
+    "close": "Zatvori",
+    "previous": "Prethodna fotografija",
+    "next": "Sljedeća fotografija",
+    "counter": "{current} od {total}",
+    "alt": {
+      "exterior": "Vanjski izgled kamene kuće Vile Irene",
+      "pool": "Privatni bazen Vile Irene",
+      "interior": "Unutrašnjost Vile Irene",
+      "bedroom": "Spavaća soba Vile Irene",
+      "bbq": "Natkriveni roštilj i vanjska blagovaonica Vile Irene",
+      "surroundings": "Vrt i okolica Vile Irene"
+    }
+  },
+  "amenities": {
+    "eyebrow": "Sadržaji",
+    "title": "Sve što treba sporom ljetu",
+    "items": {
+      "pool": {
+        "title": "Privatni bazen 32 m²",
+        "desc": "Sezonski, otvoren od travnja do listopada, s ležaljkama."
+      },
+      "bbq": {
+        "title": "Natkriveni roštilj",
+        "desc": "Veliki prostor za roštilj s vlastitim vanjskim stolom."
+      },
+      "kitchen": {
+        "title": "Potpuna kuhinja",
+        "desc": "Potpuno opremljena, s perilicom posuđa i svime za domaću kuhinju."
+      },
+      "ac": {
+        "title": "Klima-uređaj",
+        "desc": "Rashlađene sobe nakon dana na dalmatinskom suncu."
+      },
+      "wifi": {
+        "title": "Wi-Fi",
+        "desc": "Pouzdan internet na cijelom imanju."
+      },
+      "parking": {
+        "title": "Besplatan parking",
+        "desc": "Privatni parking unutar ograđenog imanja."
+      },
+      "pets": {
+        "title": "Ljubimci dobrodošli",
+        "desc": "Vaša četveronožna obitelj putuje s vama."
+      },
+      "playground": {
+        "title": "Dječje igralište",
+        "desc": "Sigurno, ograđeno mjesto gdje se djeca slobodno igraju."
+      },
+      "family": {
+        "title": "Spremno za obitelji",
+        "desc": "Dječji krevetić i hranilica uključeni, perilica rublja na imanju."
+      }
+    }
+  },
+  "reviews": {
+    "eyebrow": "Priče gostiju",
+    "title": "Ocjena 5,0 od ljudi koji su boravili",
+    "summary": "Na temelju 23 Airbnb recenzije · Odabrali gosti",
+    "translatedNote": "Prevedeno s izvorne recenzije",
+    "items": [
+      {
+        "name": "Carolin",
+        "origin": "Njemačka",
+        "date": "srpanj 2025.",
+        "text": "Bilo je još ljepše od fotografija. Sve je uređeno s puno ljubavi, vrlo čisto i udobno. Domaćini su bili iznimno srdačni, a večer uz roštilj koju su nam organizirali bila je posebna. Ako tražite miran, opuštajući obiteljski odmor, ovo je pravo mjesto."
+      },
+      {
+        "name": "Tobias",
+        "origin": "Švicarska",
+        "date": "srpanj 2025.",
+        "text": "Vlasnici su bili vrlo ljubazni. Po dolasku nas je dočekao pladanj pun malih sendviča. Bazen je čist i poziva na kupanje u bilo koje doba, a najviše nas je impresionirao natkriveni roštilj s velikim stolom za blagovanje. Ponovno bismo odabrali Brušku."
+      }
+    ]
+  },
+  "location": {
+    "eyebrow": "Gdje ćete biti",
+    "title": "Tiša strana Dalmacije",
+    "description": "Bruška leži u zadarskom zaleđu, među suhozidima i maslinicima, daleko od obalnih gužvi, a opet dovoljno blizu za kupanje. Zadarske plaže, otoci i četiri nacionalna parka na kratkoj su vožnji.",
+    "mapCta": "Učitaj kartu",
+    "mapNote": "Karta se učitava s Google Mapsa tek nakon klika.",
+    "mapTitle": "Karta Bruške, Hrvatska",
+    "attractions": [
+      {
+        "title": "Aseria",
+        "desc": "Tihe ruševine rimskog grada, odmah niz cestu kraj Benkovca."
+      },
+      {
+        "title": "Slapovi Kličevice",
+        "desc": "Skriveni riječni kanjon sa slapovima za vruće ljetne dane."
+      },
+      {
+        "title": "Tematska cesta Bruška–Medviđa",
+        "desc": "Tematska šetnica kroz tradicije zagore."
+      },
+      {
+        "title": "Benkovačka tržnica",
+        "desc": "Autentično dalmatinsko tržno jutro, onakvo kakvo je nekad bilo."
+      },
+      {
+        "title": "Nacionalni parkovi",
+        "desc": "Krka, Plitvice, Paklenica i Kornati, svi dostupni kao jednodnevni izleti."
+      },
+      {
+        "title": "Zadar i obala",
+        "desc": "Rimski forum, Morske orgulje i plaže rivijere."
+      }
+    ]
+  },
+  "booking": {
+    "eyebrow": "Rezervirajte boravak",
+    "title": "Provjerite dostupnost",
+    "subtitle": "Odaberite datume, pošaljite upit, a domaćin će vam osobno potvrditi e-poštom, obično u roku od nekoliko sati. Bez online plaćanja, bez naknada za rezervaciju.",
+    "legendFree": "Slobodno",
+    "legendBlocked": "Zauzeto",
+    "legendSelected": "Vaš boravak",
+    "loading": "Učitavanje dostupnosti…",
+    "error": "Nismo uspjeli učitati kalendar.",
+    "retry": "Pokušaj ponovno",
+    "prevMonth": "Prethodni mjesec",
+    "nextMonth": "Sljedeći mjesec",
+    "hintCheckIn": "Odaberite datum dolaska",
+    "hintCheckOut": "Sada odaberite datum odlaska",
+    "minStayNote": "Minimalni boravak: {n} noći.",
+    "checkIn": "Dolazak",
+    "checkOut": "Odlazak",
+    "nightOne": "{n} noć",
+    "nightFew": "{n} noći",
+    "nightOther": "{n} noći",
+    "clear": "Očisti datume",
+    "availabilityNote": "Kalendar je sinkroniziran s našim platformama za rezervacije i informativan je; svaku rezervaciju potvrđujemo osobno e-poštom."
+  },
+  "form": {
+    "title": "Pošaljite upit za rezervaciju",
+    "name": "Ime i prezime",
+    "email": "E-pošta",
+    "phone": "Telefon (neobavezno)",
+    "guests": "Gosti",
+    "guestsSuffix": "gostiju",
+    "message": "Poruka (neobavezno)",
+    "messagePlaceholder": "Recite nam sve što trebamo znati: vrijeme dolaska, djeca, ljubimci…",
+    "datesRequired": "Najprije odaberite datume u kalendaru iznad.",
+    "consent": "Slažem se da se moji podaci koriste za odgovor na ovaj upit, kako je opisano u {privacyLink}.",
+    "privacyLinkLabel": "pravilima privatnosti",
+    "submit": "Pošalji upit",
+    "submitting": "Slanje…",
+    "errorName": "Upišite svoje ime.",
+    "errorEmail": "Upišite ispravnu adresu e-pošte.",
+    "errorConsent": "Prihvatite pravila privatnosti.",
+    "errorRateLimited": "Previše zahtjeva. Pokušajte ponovno za nekoliko minuta.",
+    "errorGeneric": "Nešto je pošlo po zlu. Pokušajte ponovno ili nam pišite izravno."
+  },
+  "success": {
+    "title": "Upit poslan",
+    "body": "Hvala! Vaš upit je na putu. Odgovor stiže e-poštom, obično u roku od nekoliko sati, a uvijek unutar 24.",
+    "again": "Pošalji novi upit"
+  },
+  "faq": {
+    "eyebrow": "Dobro je znati",
+    "title": "Pitanja koja gosti postavljaju",
+    "items": [
+      {
+        "q": "Koje je vrijeme dolaska i odlaska?",
+        "a": "Dolazak je između 15:00 i 23:00, odlazak do 10:00. Ako trebate drugačije vrijeme, napišite to u upitu i potrudit ćemo se."
+      },
+      {
+        "q": "Kada je bazen otvoren?",
+        "a": "Bazen od 32 m² je sezonski i otvoren od 1. travnja do 31. listopada."
+      },
+      {
+        "q": "Jesu li ljubimci dobrodošli?",
+        "a": "Da, ljubimci su dobrodošli. Samo nam u upitu javite tko dolazi s vama."
+      },
+      {
+        "q": "Kako funkcionira rezervacija? Plaćam li online?",
+        "a": "Pošaljete upit sa svojim datumima, a domaćin vam osobno e-poštom potvrdi dostupnost i detalje plaćanja. Na ovoj stranici nema online plaćanja ni naknada za rezervaciju."
+      },
+      {
+        "q": "Je li kalendar uvijek ažuran?",
+        "a": "Kalendar se sinkronizira s našim platformama za rezervacije nekoliko puta dnevno, pa ga shvatite informativno. Svaka rezervacija potvrđuje se osobno prije nego što postane konačna."
+      },
+      {
+        "q": "Kako doći do nas?",
+        "a": "Bruška je u zadarskom zaleđu i najlakše se stiže autom. Zračna luka Zadar udaljena je oko 40 minuta vožnje, a točne upute šaljemo s potvrdom. Prijevoz iz zračne luke i izleti mogu se organizirati na zahtjev."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Dvije kamene kuće, bazen i 1.600 m² dalmatinskog mira. Vila Irena je tradicionalna kamena vila s privatnim bazenom u Bruškoj, u zaleđu Zadra: miran odmor za obitelji i grupe do 8 gostiju, na kratkoj vožnji od nacionalnih parkova Krka, Plitvice i Kornati te jadranskih plaža.",
+    "contactTitle": "Kontakt",
+    "contactNote": "Najbrži način da nas dobijete je obrazac za upit iznad.",
+    "airbnb": "Pogledajte nas na Airbnbu",
+    "exploreTitle": "Istražite",
+    "languageTitle": "Jezik",
+    "privacy": "Pravila privatnosti",
+    "rights": "Sva prava pridržana.",
+    "creditPrefix": "Dizajn:",
+    "creditName": "Fraviz Studio"
+  },
+  "privacy": {
+    "title": "Pravila privatnosti",
+    "updated": "Zadnja izmjena: lipanj 2026.",
+    "backHome": "Natrag na početnu",
+    "sections": [
+      {
+        "h": "Koje podatke prikupljamo",
+        "p": "Kada pošaljete upit za rezervaciju, prikupljamo podatke koje upišete u obrazac: ime, adresu e-pošte, broj telefona ako ga navedete, broj gostiju, datume putovanja i vašu poruku."
+      },
+      {
+        "h": "Zašto ih prikupljamo",
+        "p": "Podaci se koriste isključivo u jednu svrhu: za odgovor na vaš upit i dogovor boravka. Ne šaljemo newslettere i ne prodajemo niti dijelimo vaše podatke trećim stranama u marketinške svrhe."
+      },
+      {
+        "h": "Kamo idu podaci",
+        "p": "Vaš upit dostavlja se u e-poštanski sandučić domaćina putem servisa za transakcijsku e-poštu. Ova stranica ne pohranjuje podatke ni u kakvu bazu."
+      },
+      {
+        "h": "Koliko ih dugo čuvamo",
+        "p": "E-poruke s upitima čuvaju se onoliko dugo koliko je potrebno za dogovor i dokumentiranje boravka, a nakon toga se na zahtjev brišu."
+      },
+      {
+        "h": "Vaša prava",
+        "p": "Prema GDPR-u u svakom trenutku možete zatražiti pristup svojim osobnim podacima, njihov ispravak ili brisanje, odgovorom na bilo koju našu e-poruku."
+      }
+    ]
+  }
+}

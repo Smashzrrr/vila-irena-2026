@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# env (the .example is committed; real secrets are not)
+.env.local
+.env*.local
+
+# deploy / tooling
+.vercel/
+.claude/
+coverage/
+
+# local artifacts
+*.log
+.DS_Store
+.firecrawl/
+lighthouse*.json
+
+# source photos (raw WhatsApp exports, processed via `npm run images`
+# into public/images/, which IS committed)
+slike/
