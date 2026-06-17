@@ -24,7 +24,7 @@ const contentSecurityPolicy = [
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
   "frame-src https://www.google.com",
-  "connect-src 'self'",
+  "connect-src 'self' https://formsubmit.co",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

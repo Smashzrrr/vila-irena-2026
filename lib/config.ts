@@ -5,5 +5,10 @@ export const CALENDAR_MONTHS_AHEAD = 18;
 
 export const AIRBNB_LISTING_URL = "https://www.airbnb.com/rooms/24415071";
 
+// FormSubmit destination for inquiry emails — posted directly from the browser
+// (same proven approach as the French Guide site). Swap to the client's address,
+// or a FormSubmit alias to hide it, when going live.
+export const FORMSUBMIT_EMAIL = "ivan.bobanovic@hotmail.com";
+
 export const SITE_NAME = "Vila Irena";
 export const SITE_LOCATION = "Bruška, Zadar County, Croatia";

@@ -4,7 +4,7 @@ import { useState, type ReactNode } from "react";
 import { Loader2 } from "lucide-react";
 import type { Dictionary } from "@/lib/dictionaries";
 import type { Locale } from "@/lib/i18n";
-import { MAX_GUESTS } from "@/lib/config";
+import { MAX_GUESTS, FORMSUBMIT_EMAIL } from "@/lib/config";
 
 const inputClass =
   "w-full rounded-xl border border-stone/70 bg-white px-4 py-3 text-[15px] text-ink placeholder:text-ink-faint/70 transition-colors duration-200 focus:border-olive focus:outline-none focus:ring-2 focus:ring-olive/25";
@@ -70,32 +70,51 @@ export function InquiryForm({
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) nextErrors.email = form.errorEmail;
     if (!consent) nextErrors.consent = form.errorConsent;
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0 || datesMissing) return;
+    if (Object.keys(nextErrors).length > 0) return;
+    if (datesMissing) {
+      setServerError(form.datesRequired);
+      return;
+    }
+    // Honeypot: a filled hidden field means a bot — fake success, send nothing.
+    if (website) {
+      onSuccess();
+      return;
+    }
 
     setSubmitting(true);
     try {
-      const res = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: name.trim(),
-          email: email.trim(),
-          phone: phone.trim(),
-          guests,
-          checkIn,
-          checkOut,
-          message: message.trim(),
-          consent,
-          locale,
-          website,
-        }),
-      });
-      if (res.ok) {
+      // Posted straight to FormSubmit (same approach as the French Guide site). Success
+      // shows ONLY when FormSubmit actually delivered; the first ever submit triggers a
+      // one-time activation email to the destination address.
+      const res = await fetch(
+        `https://formsubmit.co/ajax/${encodeURIComponent(FORMSUBMIT_EMAIL)}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            _subject: `Vila Irena — upit ${checkIn} → ${checkOut} (${name.trim()})`,
+            _template: "table",
+            _captcha: "false",
+            Name: name.trim(),
+            Email: email.trim(),
+            Phone: phone.trim() || "-",
+            Guests: String(guests),
+            "Check-in": checkIn ?? "",
+            "Check-out": checkOut ?? "",
+            Language: locale,
+            Message: message.trim() || "-",
+          }),
+        },
+      );
+      const data = (await res.json().catch(() => ({}))) as {
+        success?: string | boolean;
+        message?: string;
+      };
+      if (data.success === "true" || data.success === true) {
         onSuccess();
-      } else if (res.status === 429) {
-        setServerError(form.errorRateLimited);
       } else {
-        setServerError(form.errorGeneric);
+        // Not delivered yet — almost always the one-time activation is still pending.
+        setServerError(data.message || form.errorGeneric);
       }
     } catch {
       setServerError(form.errorGeneric);
@@ -234,7 +253,7 @@ export function InquiryForm({
 
         <button
           type="submit"
-          disabled={submitting || datesMissing}
+          disabled={submitting}
           className="flex w-full items-center justify-center gap-2 rounded-full bg-olive-deep px-7 py-3.5 text-[15px] font-medium text-cream shadow-(--shadow-card) transition-all duration-200 hover:-translate-y-0.5 hover:bg-olive-ink hover:shadow-(--shadow-card-hover) disabled:cursor-not-allowed disabled:opacity-55 disabled:hover:translate-y-0"
         >
           {submitting && <Loader2 aria-hidden className="size-4 animate-spin" />}
