@@ -52,12 +52,8 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         "@type": "VacationRental",
         "@id": `${siteUrl}/#lodging`,
         name: "Vila Irena",
-        additionalType: "https://schema.org/House",
-        identifier: {
-          "@type": "PropertyValue",
-          propertyID: "airbnb",
-          value: "24415071",
-        },
+        additionalType: "EntirePlace",
+        identifier: AIRBNB_LISTING_URL,
         description: dict.meta.description,
         url,
         image,
@@ -90,6 +86,11 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         containsPlace: {
           "@type": "Accommodation",
           name: "Vila Irena",
+          additionalType: "EntirePlace",
+          bed: [
+            { "@type": "BedDetails", typeOfBed: "Double", numberOfBeds: 2 },
+            { "@type": "BedDetails", typeOfBed: "Sofa bed", numberOfBeds: 2 },
+          ],
           occupancy: {
             "@type": "QuantitativeValue",
             value: 8,
