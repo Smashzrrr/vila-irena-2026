@@ -103,7 +103,29 @@ export async function POST(request: NextRequest) {
     console.error("INQUIRY_TIER1_RESEND_FAILED", error);
   }
 
-  // Tier 2: Web3Forms fallback delivery.
+  // Tier 2: FormSubmit (free, no API key — env-driven destination email).
+  try {
+    const fsEmail = process.env.FORMSUBMIT_EMAIL;
+    if (!fsEmail) throw new Error("FormSubmit env var not configured");
+    const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(fsEmail)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        _subject: subject,
+        _captcha: "false",
+        _template: "table",
+        name: data.name,
+        email: data.email,
+        message: text,
+      }),
+    });
+    if (!res.ok) throw new Error(`FormSubmit responded ${res.status}`);
+    return NextResponse.json({ ok: true, tier: "formsubmit" });
+  } catch (error) {
+    console.error("INQUIRY_TIER2_FORMSUBMIT_FAILED", error);
+  }
+
+  // Tier 3: Web3Forms fallback delivery.
   try {
     const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
     if (!accessKey) throw new Error("Web3Forms env var not configured");
@@ -124,7 +146,7 @@ export async function POST(request: NextRequest) {
     console.error("INQUIRY_TIER2_WEB3FORMS_FAILED", error);
   }
 
-  // Tier 3: record only that a lead was lost — never log PII (name/email/phone/message)
+  // Tier 4: record only that a lead was lost — never log PII (name/email/phone/message)
   // to host logs (GDPR storage-limitation; matches the "no database" privacy claim).
   console.error(
     "INQUIRY_FALLBACK",
