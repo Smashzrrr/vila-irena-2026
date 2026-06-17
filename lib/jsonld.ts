@@ -64,6 +64,7 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         address: {
           "@type": "PostalAddress",
           addressLocality: "Bruška",
+          postalCode: "23420",
           addressRegion: "Zadarska županija",
           addressCountry: "HR",
         },
