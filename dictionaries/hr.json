@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vila Irena · Kamena kuća s bazenom · Bruška, Dalmacija",
-    "description": "Kamena vila s privatnim bazenom u Bruškoj kraj Zadra: dvije tradicionalne dalmatinske kuće na ograđenom imanju od 1.600 m². Smještaj za 8 gostiju, ljubimci dobrodošli. Rezervirajte izravno kod domaćina."
+    "description": "Kamena vila s privatnim bazenom u Bruškoj kraj Zadra — dvije dalmatinske kuće na ograđenom imanju 1.600 m². Za 8 gostiju, ljubimci dobrodošli."
   },
   "langNames": {
     "en": "English",
@@ -15,7 +15,8 @@
     "reviews": "Recenzije",
     "location": "Lokacija",
     "faq": "Pitanja",
-    "cta": "Provjeri dostupnost"
+    "cta": "Provjeri dostupnost",
+    "menuLabel": "Izbornik"
   },
   "hero": {
     "eyebrow": "Bruška · Dalmatinska zagora",
@@ -63,6 +64,11 @@
   "amenities": {
     "eyebrow": "Sadržaji",
     "title": "Sve što treba sporom ljetu",
+    "groups": {
+      "outdoor": { "label": "Voda i vanjski život", "lede": "Bazen, roštilj i mjesto za igru — dani provedeni vani." },
+      "home": { "label": "Dom", "lede": "Sve za udoban boravak unutra." },
+      "family": { "label": "Za obitelj", "lede": "Spremno za male i četveronožne goste." }
+    },
     "items": {
       "pool": {
         "title": "Privatni bazen 32 m²",
@@ -125,6 +131,7 @@
   "location": {
     "eyebrow": "Gdje ćete biti",
     "title": "Tiša strana Dalmacije",
+    "nearbyLabel": "U blizini",
     "description": "Bruška leži u zadarskom zaleđu, među suhozidima i maslinicima, daleko od obalnih gužvi, a opet dovoljno blizu za kupanje. Zadarske plaže, otoci i četiri nacionalna parka na kratkoj su vožnji.",
     "mapCta": "Učitaj kartu",
     "mapNote": "Karta se učitava s Google Mapsa tek nakon klika.",
@@ -132,27 +139,33 @@
     "attractions": [
       {
         "title": "Aseria",
-        "desc": "Tihe ruševine rimskog grada, odmah niz cestu kraj Benkovca."
+        "desc": "Tihe ruševine rimskog grada, odmah niz cestu kraj Benkovca.",
+        "distance": "~15 min"
       },
       {
         "title": "Slapovi Kličevice",
-        "desc": "Skriveni riječni kanjon sa slapovima za vruće ljetne dane."
+        "desc": "Skriveni riječni kanjon sa slapovima za vruće ljetne dane.",
+        "distance": "~15 min"
       },
       {
         "title": "Tematska cesta Bruška–Medviđa",
-        "desc": "Tematska šetnica kroz tradicije zagore."
+        "desc": "Tematska šetnica kroz tradicije zagore.",
+        "distance": "~5 min"
       },
       {
         "title": "Benkovačka tržnica",
-        "desc": "Autentično dalmatinsko tržno jutro, onakvo kakvo je nekad bilo."
+        "desc": "Autentično dalmatinsko tržno jutro, onakvo kakvo je nekad bilo.",
+        "distance": "~15 min"
       },
       {
         "title": "Nacionalni parkovi",
-        "desc": "Krka, Plitvice, Paklenica i Kornati, svi dostupni kao jednodnevni izleti."
+        "desc": "Krka, Plitvice, Paklenica i Kornati, svi dostupni kao jednodnevni izleti.",
+        "distance": "od 35 min"
       },
       {
         "title": "Zadar i obala",
-        "desc": "Rimski forum, Morske orgulje i plaže rivijere."
+        "desc": "Rimski forum, Morske orgulje i plaže rivijere.",
+        "distance": "~40 min"
       }
     ]
   },
@@ -177,7 +190,7 @@
     "nightFew": "{n} noći",
     "nightOther": "{n} noći",
     "clear": "Očisti datume",
-    "availabilityNote": "Kalendar je sinkroniziran s našim platformama za rezervacije i informativan je; svaku rezervaciju potvrđujemo osobno e-poštom."
+    "availabilityNote": "Kalendar služi za odabir željenih datuma — dostupnost potvrđujemo osobno e-poštom nakon vašeg upita."
   },
   "form": {
     "title": "Pošaljite upit za rezervaciju",
@@ -225,8 +238,8 @@
         "a": "Pošaljete upit sa svojim datumima, a domaćin vam osobno e-poštom potvrdi dostupnost i detalje plaćanja. Na ovoj stranici nema online plaćanja ni naknada za rezervaciju."
       },
       {
-        "q": "Je li kalendar uvijek ažuran?",
-        "a": "Kalendar se sinkronizira s našim platformama za rezervacije nekoliko puta dnevno, pa ga shvatite informativno. Svaka rezervacija potvrđuje se osobno prije nego što postane konačna."
+        "q": "Pokazuje li kalendar dostupnost uživo?",
+        "a": "Ne — kalendar služi samo za odabir datuma. Svaki upit domaćin potvrđuje osobno prije nego što išta postane konačno."
       },
       {
         "q": "Kako doći do nas?",

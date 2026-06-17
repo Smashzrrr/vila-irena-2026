@@ -11,22 +11,24 @@ export function MapFacade({
   cta,
   note,
   title,
+  aspectClassName = "aspect-[4/3]",
 }: {
   cta: string;
   note: string;
   title: string;
+  aspectClassName?: string;
 }) {
   const [loaded, setLoaded] = useState(false);
 
   return (
     <div className="overflow-hidden rounded-2xl border border-stone/60 bg-sand-deep shadow-(--shadow-card)">
-      <div className="relative aspect-[4/3] w-full">
+      <div className={`relative w-full ${aspectClassName}`}>
         {loaded ? (
           <iframe
             src={MAP_EMBED_SRC}
             title={title}
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
             className="absolute inset-0 h-full w-full border-0"
           />
         ) : (

@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { inquirySchema, type InquiryPayload } from "@/lib/inquiry-schema";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { nightsBetween } from "@/lib/dates";
+import { MIN_NIGHTS } from "@/lib/config";
 
 export const runtime = "nodejs";
 
@@ -14,9 +15,14 @@ function escapeHtml(value: string): string {
     .replaceAll('"', "&quot;");
 }
 
+// Strip CR/LF so a crafted name cannot inject additional email headers.
+function sanitizeHeader(value: string): string {
+  return value.replace(/[\r\n]/g, " ").trim();
+}
+
 function buildEmail(data: InquiryPayload) {
   const nights = nightsBetween(data.checkIn, data.checkOut);
-  const subject = `Booking inquiry ${data.checkIn} to ${data.checkOut} (${nights} nights) - ${data.name}`;
+  const subject = `Booking inquiry ${data.checkIn} to ${data.checkOut} (${nights} nights) - ${sanitizeHeader(data.name)}`;
   const rows: [string, string][] = [
     ["Name", data.name],
     ["Email", data.email],
@@ -71,6 +77,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "validation" }, { status: 400 });
   }
   const data = parsed.data;
+  if (nightsBetween(data.checkIn, data.checkOut) < MIN_NIGHTS) {
+    return NextResponse.json({ ok: false, error: "validation" }, { status: 400 });
+  }
   const { subject, html, text } = buildEmail(data);
 
   // Tier 1: Resend email to the owner.
@@ -115,10 +124,17 @@ export async function POST(request: NextRequest) {
     console.error("INQUIRY_TIER2_WEB3FORMS_FAILED", error);
   }
 
-  // Tier 3: full payload into host logs so the lead is never lost silently.
+  // Tier 3: record only that a lead was lost — never log PII (name/email/phone/message)
+  // to host logs (GDPR storage-limitation; matches the "no database" privacy claim).
   console.error(
     "INQUIRY_FALLBACK",
-    JSON.stringify({ ...data, receivedAt: new Date().toISOString() }),
+    JSON.stringify({
+      receivedAt: new Date().toISOString(),
+      checkIn: data.checkIn,
+      checkOut: data.checkOut,
+      guests: data.guests,
+      locale: data.locale,
+    }),
   );
   return NextResponse.json({ ok: true, tier: "logged" });
 }

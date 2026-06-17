@@ -14,6 +14,7 @@ export async function generateMetadata({
   const dict = await getDictionary(locale);
   return {
     title: `${dict.privacy.title} · Vila Irena`,
+    alternates: { canonical: `/${locale}/privacy` },
     robots: { index: false },
   };
 }

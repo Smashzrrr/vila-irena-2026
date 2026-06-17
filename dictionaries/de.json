@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vila Irena · Steinhaus mit Pool · Bruška, Dalmatien",
-    "description": "Steinvilla mit privatem Pool in Bruška bei Zadar: zwei traditionelle dalmatinische Häuser auf einem umzäunten 1.600 m² Anwesen. Ferienhaus für 8 Gäste, Haustiere willkommen. Direkt beim Gastgeber buchen."
+    "description": "Steinvilla mit privatem Pool in Bruška bei Zadar — zwei dalmatinische Häuser, 1.600 m² Anwesen. Für 8 Gäste, Haustiere willkommen."
   },
   "langNames": {
     "en": "English",
@@ -15,7 +15,8 @@
     "reviews": "Bewertungen",
     "location": "Lage",
     "faq": "FAQ",
-    "cta": "Verfügbarkeit prüfen"
+    "cta": "Verfügbarkeit prüfen",
+    "menuLabel": "Menü"
   },
   "hero": {
     "eyebrow": "Bruška · Dalmatinisches Hinterland",
@@ -63,6 +64,11 @@
   "amenities": {
     "eyebrow": "Ausstattung",
     "title": "Alles, was ein langsamer Sommer braucht",
+    "groups": {
+      "outdoor": { "label": "Wasser & Außenbereich", "lede": "Pool, Grill und Platz zum Spielen — Tage im Freien." },
+      "home": { "label": "Das Zuhause", "lede": "Alles für einen komfortablen Aufenthalt drinnen." },
+      "family": { "label": "Für die Familie", "lede": "Bereit für die Kleinen und vierbeinige Gäste." }
+    },
     "items": {
       "pool": {
         "title": "Privater 32 m² Pool",
@@ -125,6 +131,7 @@
   "location": {
     "eyebrow": "Wo Sie sein werden",
     "title": "Die stille Seite Dalmatiens",
+    "nearbyLabel": "In der Nähe",
     "description": "Bruška liegt im Hinterland von Zadar, zwischen Trockenmauern und Olivenhainen, fern vom Trubel der Küste und doch nah genug für einen Sprung ins Meer. Die Strände von Zadar, die Inseln und vier Nationalparks sind bequem mit dem Auto erreichbar.",
     "mapCta": "Karte laden",
     "mapNote": "Die Karte wird erst nach Ihrem Klick von Google Maps geladen.",
@@ -132,27 +139,33 @@
     "attractions": [
       {
         "title": "Asseria",
-        "desc": "Die stillen Ruinen einer römischen Stadt, gleich die Straße hinunter bei Benkovac."
+        "desc": "Die stillen Ruinen einer römischen Stadt, gleich die Straße hinunter bei Benkovac.",
+        "distance": "~15 Min."
       },
       {
         "title": "Kličevica-Wasserfälle",
-        "desc": "Eine versteckte Flussschlucht mit Wasserfällen für heiße Sommertage."
+        "desc": "Eine versteckte Flussschlucht mit Wasserfällen für heiße Sommertage.",
+        "distance": "~15 Min."
       },
       {
         "title": "Themenweg Bruška–Medviđa",
-        "desc": "Ein Themenweg durch die Traditionen des Hinterlands."
+        "desc": "Ein Themenweg durch die Traditionen des Hinterlands.",
+        "distance": "~5 Min."
       },
       {
         "title": "Markt von Benkovac",
-        "desc": "Ein authentischer dalmatinischer Marktmorgen, wie er früher einmal war."
+        "desc": "Ein authentischer dalmatinischer Marktmorgen, wie er früher einmal war.",
+        "distance": "~15 Min."
       },
       {
         "title": "Nationalparks",
-        "desc": "Krka, Plitvice, Paklenica und Kornati, alle als Tagesausflug erreichbar."
+        "desc": "Krka, Plitvice, Paklenica und Kornati, alle als Tagesausflug erreichbar.",
+        "distance": "ab 35 Min."
       },
       {
         "title": "Zadar & die Küste",
-        "desc": "Römisches Forum, die Meeresorgel und die Strände der Riviera."
+        "desc": "Römisches Forum, die Meeresorgel und die Strände der Riviera.",
+        "distance": "~40 Min."
       }
     ]
   },
@@ -177,7 +190,7 @@
     "nightFew": "{n} Nächte",
     "nightOther": "{n} Nächte",
     "clear": "Daten löschen",
-    "availabilityNote": "Der Kalender ist mit unseren Buchungsplattformen synchronisiert und dient zur Orientierung; jede Reservierung wird persönlich per E-Mail bestätigt."
+    "availabilityNote": "Der Kalender dient nur zur Auswahl Ihrer Daten — die Verfügbarkeit bestätigen wir nach Ihrer Anfrage persönlich per E-Mail."
   },
   "form": {
     "title": "Buchungsanfrage senden",
@@ -225,8 +238,8 @@
         "a": "Sie senden eine Anfrage mit Ihren Daten, und Ihre Gastgeberin bestätigt Verfügbarkeit und Zahlungsdetails persönlich per E-Mail. Auf dieser Website gibt es keine Online-Zahlung und keine Buchungsgebühren."
       },
       {
-        "q": "Ist der Kalender immer aktuell?",
-        "a": "Der Kalender synchronisiert sich mehrmals täglich mit unseren Buchungsplattformen, verstehen Sie ihn daher als Orientierung. Jede Reservierung wird persönlich bestätigt, bevor sie verbindlich ist."
+        "q": "Zeigt der Kalender die Live-Verfügbarkeit?",
+        "a": "Nein — der Kalender dient nur zur Auswahl Ihrer Daten. Jede Anfrage wird vom Gastgeber persönlich bestätigt, bevor etwas verbindlich ist."
       },
       {
         "q": "Wie kommen wir hin?",

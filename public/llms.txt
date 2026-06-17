@@ -29,10 +29,10 @@
 
 ## Booking
 
-Guests check availability on the website calendar (synced with the host's booking
-platforms), select check-in and check-out dates, and send an inquiry form with their
-dates and guest count. The host replies by email, usually within a few hours and
-always within 24. There is no online payment on the website and no booking fees.
+Guests pick check-in and check-out dates in the website calendar and send an inquiry
+form with their dates and guest count. The calendar is for date selection only and does
+not show live availability — the host confirms availability personally by email, usually
+within a few hours and always within 24. No online payment on the website, no booking fees.
 
 ## Frequently asked questions
 
@@ -41,13 +41,13 @@ always within 24. There is no online payment on the website and no booking fees.
 - Pets are welcome; mention them in the inquiry.
 - Booking is by inquiry; the host confirms availability and payment by email. No online
   payment on the site, no booking fees.
-- The calendar syncs with booking platforms several times a day and is indicative; every
-  reservation is confirmed personally before it is final.
+- The calendar is for choosing dates only; it does not show live availability. Every
+  inquiry is confirmed personally by the host by email before anything is final.
 - Bruška is in the Zadar hinterland, easiest reached by car; Zadar airport is ~40 minutes.
   Airport transfers and excursions can be arranged on request.
 
 ## Pages
 
-- / (en, hr, de): landing page with gallery, amenities, reviews, location,
-  availability calendar and inquiry form
-- /privacy: privacy policy
+- /en, /hr, /de: landing page with gallery, amenities, reviews, location,
+  date-selection calendar and inquiry form
+- /en/privacy, /hr/privacy, /de/privacy: privacy policy (noindex)

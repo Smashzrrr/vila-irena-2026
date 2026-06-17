@@ -67,10 +67,9 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
           latitude: 44.074893,
           longitude: 15.73813,
         },
-        checkinTime: "15:00",
-        checkoutTime: "10:00",
+        checkinTime: "T15:00",
+        checkoutTime: "T10:00",
         petsAllowed: true,
-        numberOfRooms: 2,
         priceRange: "€€",
         amenityFeature,
         sameAs: [AIRBNB_LISTING_URL],
@@ -81,20 +80,16 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
           bestRating: 5,
           worstRating: 1,
         },
-        containsPlace: {
-          "@type": "Accommodation",
-          name: "Vila Irena",
-          occupancy: {
-            "@type": "QuantitativeValue",
-            value: 8,
-          },
-          numberOfBedrooms: 2,
-          numberOfBathroomsTotal: 2,
-          floorSize: {
-            "@type": "QuantitativeValue",
-            value: 90,
-            unitCode: "MTK",
-          },
+        numberOfBedrooms: 2,
+        numberOfBathroomsTotal: 2,
+        occupancy: {
+          "@type": "QuantitativeValue",
+          value: 8,
+        },
+        floorSize: {
+          "@type": "QuantitativeValue",
+          value: 90,
+          unitCode: "MTK",
         },
       },
       {
@@ -115,7 +110,6 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         "@id": `${siteUrl}/#website`,
         name: "Vila Irena",
         url: siteUrl,
-        inLanguage: locale,
       },
       {
         "@type": "WebPage",

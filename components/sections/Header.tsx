@@ -79,7 +79,8 @@ export function Header({
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
-            aria-label="Menu"
+            aria-controls="mobile-nav"
+            aria-label={nav.menuLabel}
             className={`grid size-10 place-items-center rounded-full transition-colors duration-200 lg:hidden ${
               solid ? "text-ink" : "text-cream"
             }`}
@@ -92,6 +93,7 @@ export function Header({
       <AnimatePresence>
         {open && (
           <motion.nav
+            id="mobile-nav"
             aria-label="Mobile"
             initial={reduce ? false : { height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vila Irena · Stone Country House with Pool · Bruška, Dalmatia",
-    "description": "Stone villa with a private pool in Bruška, near Zadar: two traditional Dalmatian houses on a walled 1,600 m² estate. Sleeps 8, pets welcome. Book directly with the host."
+    "description": "Stone villa with a private pool in Bruška near Zadar — two Dalmatian stone houses on a 1,600 m² walled estate. Sleeps 8, pets welcome."
   },
   "langNames": {
     "en": "English",
@@ -15,7 +15,8 @@
     "reviews": "Reviews",
     "location": "Location",
     "faq": "FAQ",
-    "cta": "Check availability"
+    "cta": "Check availability",
+    "menuLabel": "Menu"
   },
   "hero": {
     "eyebrow": "Bruška · Dalmatian hinterland",
@@ -63,6 +64,11 @@
   "amenities": {
     "eyebrow": "Amenities",
     "title": "Everything a slow summer needs",
+    "groups": {
+      "outdoor": { "label": "Water & outdoor life", "lede": "Pool, grill and room to play — days spent outside." },
+      "home": { "label": "The home", "lede": "Everything for a comfortable stay indoors." },
+      "family": { "label": "For the family", "lede": "Ready for little ones and four-legged guests." }
+    },
     "items": {
       "pool": {
         "title": "Private 32 m² pool",
@@ -125,6 +131,7 @@
   "location": {
     "eyebrow": "Where you'll be",
     "title": "The quiet side of Dalmatia",
+    "nearbyLabel": "Nearby",
     "description": "Bruška sits in the Zadar hinterland, between dry stone walls and olive groves, far from the coastal crowds yet close enough for a swim. The beaches of Zadar, the islands and four national parks are all within an easy drive.",
     "mapCta": "Load map",
     "mapNote": "The map loads from Google Maps only after you click.",
@@ -132,27 +139,33 @@
     "attractions": [
       {
         "title": "Asseria",
-        "desc": "The quiet ruins of a Roman city, just down the road near Benkovac."
+        "desc": "The quiet ruins of a Roman city, just down the road near Benkovac.",
+        "distance": "~15 min"
       },
       {
         "title": "Kličevica waterfalls",
-        "desc": "A hidden river canyon with waterfalls for hot summer days."
+        "desc": "A hidden river canyon with waterfalls for hot summer days.",
+        "distance": "~15 min"
       },
       {
         "title": "Bruška–Medviđa heritage road",
-        "desc": "A themed walking road through the traditions of the hinterland."
+        "desc": "A themed walking road through the traditions of the hinterland.",
+        "distance": "~5 min"
       },
       {
         "title": "Benkovac market",
-        "desc": "An authentic Dalmatian market morning, the way it used to be."
+        "desc": "An authentic Dalmatian market morning, the way it used to be.",
+        "distance": "~15 min"
       },
       {
         "title": "National parks",
-        "desc": "Krka, Plitvice, Paklenica and Kornati, all reachable as day trips."
+        "desc": "Krka, Plitvice, Paklenica and Kornati, all reachable as day trips.",
+        "distance": "from 35 min"
       },
       {
         "title": "Zadar & the coast",
-        "desc": "Roman forum, the Sea Organ and the beaches of the riviera."
+        "desc": "Roman forum, the Sea Organ and the beaches of the riviera.",
+        "distance": "~40 min"
       }
     ]
   },
@@ -177,7 +190,7 @@
     "nightFew": "{n} nights",
     "nightOther": "{n} nights",
     "clear": "Clear dates",
-    "availabilityNote": "The calendar is synced with our booking platforms and is indicative; every reservation is confirmed personally by email."
+    "availabilityNote": "The calendar is just for choosing your dates — we confirm availability personally by email after your inquiry."
   },
   "form": {
     "title": "Send a booking inquiry",
@@ -225,8 +238,8 @@
         "a": "You send an inquiry with your dates, and your host confirms availability and payment details personally by email. There is no online payment on this website and no booking fees."
       },
       {
-        "q": "Is the calendar always up to date?",
-        "a": "The calendar syncs with our booking platforms several times a day, so treat it as indicative. Every reservation is confirmed personally before anything is final."
+        "q": "Does the calendar show live availability?",
+        "a": "No — the calendar is just for choosing your dates. Every inquiry is confirmed personally by the host before anything is final."
       },
       {
         "q": "How do I get there?",

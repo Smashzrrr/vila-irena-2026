@@ -21,7 +21,6 @@ export function AvailabilityCalendar({
   locale,
   today,
   blocked,
-  loading,
   checkIn,
   checkOut,
   onDayClick,
@@ -30,7 +29,6 @@ export function AvailabilityCalendar({
   locale: Locale;
   today: string;
   blocked: BlockedRange[];
-  loading: boolean;
   checkIn: string | null;
   checkOut: string | null;
   onDayClick: (date: string) => void;
@@ -44,33 +42,13 @@ export function AvailabilityCalendar({
   const navigate = (delta: number) => {
     setDirection(delta);
     setVisibleMonth(addMonths(visibleMonth, delta));
+    setHoverDate(null); // avoid a phantom range-tint when the hovered day's month unmounts
   };
 
   const secondMonth = addMonths(visibleMonth, 1);
   const prevDisabled = compareMonthRef(visibleMonth, currentMonth) <= 0;
   const nextDisabled =
     compareMonthRef(secondMonth, addMonths(currentMonth, CALENDAR_MONTHS_AHEAD)) >= 0;
-
-  if (loading) {
-    return (
-      <div
-        className="grid min-h-72 animate-pulse gap-8 lg:grid-cols-2"
-        aria-busy="true"
-        aria-label={booking.loading}
-      >
-        {[0, 1].map((i) => (
-          <div key={i} className={i === 1 ? "hidden lg:block" : undefined}>
-            <div className="mx-auto h-5 w-32 rounded bg-sand-deep" />
-            <div className="mt-6 grid grid-cols-7 gap-2">
-              {Array.from({ length: 35 }, (_, j) => (
-                <div key={j} className="aspect-square rounded-full bg-sand/80" />
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
 
   const navButton =
     "grid size-9 place-items-center rounded-full border border-stone/60 text-ink-soft transition-all duration-200 hover:border-olive hover:text-olive disabled:opacity-30 disabled:hover:border-stone/60 disabled:hover:text-ink-soft";
@@ -144,10 +122,6 @@ export function AvailabilityCalendar({
         <span className="flex items-center gap-2">
           <span aria-hidden className="size-3.5 rounded-full border border-stone/70 bg-white" />
           {booking.legendFree}
-        </span>
-        <span className="flex items-center gap-2">
-          <span aria-hidden className="size-3.5 rounded-full bg-sand-deep line-through" />
-          {booking.legendBlocked}
         </span>
         <span className="flex items-center gap-2">
           <span aria-hidden className="size-3.5 rounded-full bg-olive" />

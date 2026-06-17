@@ -35,9 +35,9 @@ export default async function Home({
         <QuickFacts facts={dict.facts} />
         <About about={dict.about} galleryAlt={dict.gallery.alt} />
         <GalleryGrid gallery={dict.gallery} />
-        <Amenities amenities={dict.amenities} />
+        <Amenities amenities={dict.amenities} galleryAlt={dict.gallery.alt} />
         <Reviews reviews={dict.reviews} />
-        <Location location={dict.location} />
+        <Location location={dict.location} galleryAlt={dict.gallery.alt} />
         <BookingSection
           booking={dict.booking}
           form={dict.form}

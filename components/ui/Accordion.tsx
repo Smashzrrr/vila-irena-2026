@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ChevronDown } from "lucide-react";
-import { EASE_PREMIUM } from "./Reveal";
 
 export interface AccordionItem {
   q: string;
@@ -12,7 +10,6 @@ export interface AccordionItem {
 
 export function Accordion({ items }: { items: AccordionItem[] }) {
   const [open, setOpen] = useState<number | null>(null);
-  const reduce = useReducedMotion();
 
   return (
     <div className="divide-y divide-stone/60 rounded-2xl border border-stone/60 bg-white shadow-(--shadow-card)">
@@ -24,6 +21,8 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
               type="button"
               onClick={() => setOpen(isOpen ? null : i)}
               aria-expanded={isOpen}
+              aria-controls={`faq-answer-${i}`}
+              id={`faq-question-${i}`}
               className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
             >
               <span className="font-medium text-ink">{item.q}</span>
@@ -34,21 +33,22 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
                 }`}
               />
             </button>
-            <AnimatePresence initial={false}>
-              {isOpen && (
-                <motion.div
-                  initial={reduce ? false : { height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={reduce ? undefined : { height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3, ease: EASE_PREMIUM }}
-                  className="overflow-hidden"
-                >
-                  <p className="px-6 pb-5 text-[15px] leading-relaxed text-ink-soft">
-                    {item.a}
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {/* The answer is always rendered in the DOM so search and AI engines can read
+                it; the grid-rows trick collapses it visually without removing it. */}
+            <div
+              id={`faq-answer-${i}`}
+              role="region"
+              aria-labelledby={`faq-question-${i}`}
+              className={`grid transition-[grid-template-rows] duration-300 ease-(--ease-premium) motion-reduce:transition-none ${
+                isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <p className="px-6 pb-5 text-[15px] leading-relaxed text-ink-soft">
+                  {item.a}
+                </p>
+              </div>
+            </div>
           </div>
         );
       })}

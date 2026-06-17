@@ -44,7 +44,6 @@ export const DayCell = memo(function DayCell({
       type="button"
       disabled={!selectable}
       aria-label={ariaLabel}
-      aria-pressed={isStart || isEnd}
       onClick={() => onClick(date)}
       onMouseEnter={selectable ? () => onHover(date) : undefined}
       className={`mx-auto grid size-9 place-items-center rounded-full text-sm transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-olive disabled:cursor-default md:size-10 ${tone}`}
