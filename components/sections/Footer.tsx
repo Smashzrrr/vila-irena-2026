@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/lib/dictionaries";
 import type { Locale } from "@/lib/i18n";
-import { AIRBNB_LISTING_URL } from "@/lib/config";
+import { AIRBNB_LISTING_URL, OWNER_PHONE } from "@/lib/config";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 const ANCHORS = ["about", "gallery", "amenities", "reviews", "location", "faq"] as const;
@@ -47,6 +47,12 @@ export function Footer({
               {footer.contactTitle}
             </h3>
             <p className="mt-4 text-sm leading-relaxed">{footer.contactNote}</p>
+            <a
+              href={`tel:${OWNER_PHONE.replace(/\s/g, "")}`}
+              className="mt-3 block text-sm font-medium text-cream transition-colors hover:text-cream/80"
+            >
+              {OWNER_PHONE}
+            </a>
             <a
               href={AIRBNB_LISTING_URL}
               target="_blank"

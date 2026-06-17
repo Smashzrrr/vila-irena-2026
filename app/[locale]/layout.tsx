@@ -42,6 +42,7 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(siteUrl),
+    verification: { google: "sv5X19uv8lWlJ2hyFfEkoS4JdaZ1EnVQumN-W-MCpaU" },
     title: dict.meta.title,
     description: dict.meta.description,
     alternates: {

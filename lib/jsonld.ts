@@ -1,6 +1,6 @@
 import type { Dictionary } from "./dictionaries";
 import type { Locale } from "./i18n";
-import { AIRBNB_LISTING_URL } from "./config";
+import { AIRBNB_LISTING_URL, OWNER_PHONE } from "./config";
 import { galleryImages, heroImage } from "./image-manifest";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
@@ -71,6 +71,7 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         checkoutTime: "T10:00",
         petsAllowed: true,
         priceRange: "€€",
+        telephone: OWNER_PHONE.replace(/\s/g, ""),
         amenityFeature,
         sameAs: [AIRBNB_LISTING_URL],
         aggregateRating: {
