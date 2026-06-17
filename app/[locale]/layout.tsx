@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Lora, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n";
@@ -87,7 +88,18 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${lora.variable} ${inter.variable}`}>
       {/* Extensions (ColorZilla, Grammarly, …) inject attributes on <body> before
           React hydrates; suppress the resulting dev-only attribute mismatch warning. */}
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {/* Cookiebot CMP — auto-blocks trackers until consent. Loads early so it can
+            gate any analytics/marketing scripts added later. */}
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="a51e2e6e-eb4b-4b96-9394-08b96ae2cf32"
+          data-blockingmode="auto"
+          strategy="beforeInteractive"
+        />
+        {children}
+      </body>
     </html>
   );
 }

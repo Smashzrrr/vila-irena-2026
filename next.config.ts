@@ -19,12 +19,12 @@ const isProd = process.env.NODE_ENV === "production";
 // Next's bootstrap; next/font is self-hosted; frame-src allows the consent-gated Maps iframe.
 const contentSecurityPolicy = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  "script-src 'self' 'unsafe-inline' https://consent.cookiebot.com https://consentcdn.cookiebot.com",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  "frame-src https://www.google.com",
-  "connect-src 'self' https://formsubmit.co",
+  "frame-src https://www.google.com https://consentcdn.cookiebot.com",
+  "connect-src 'self' https://formsubmit.co https://consent.cookiebot.com https://consentcdn.cookiebot.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

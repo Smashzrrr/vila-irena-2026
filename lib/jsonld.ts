@@ -52,6 +52,12 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         "@type": "VacationRental",
         "@id": `${siteUrl}/#lodging`,
         name: "Vila Irena",
+        additionalType: "https://schema.org/House",
+        identifier: {
+          "@type": "PropertyValue",
+          propertyID: "airbnb",
+          value: "24415071",
+        },
         description: dict.meta.description,
         url,
         image,
@@ -72,7 +78,6 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         petsAllowed: true,
         priceRange: "€€",
         telephone: OWNER_PHONE.replace(/\s/g, ""),
-        amenityFeature,
         sameAs: [AIRBNB_LISTING_URL],
         aggregateRating: {
           "@type": "AggregateRating",
@@ -81,16 +86,21 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
           bestRating: 5,
           worstRating: 1,
         },
-        numberOfBedrooms: 2,
-        numberOfBathroomsTotal: 2,
-        occupancy: {
-          "@type": "QuantitativeValue",
-          value: 8,
-        },
-        floorSize: {
-          "@type": "QuantitativeValue",
-          value: 90,
-          unitCode: "MTK",
+        containsPlace: {
+          "@type": "Accommodation",
+          name: "Vila Irena",
+          occupancy: {
+            "@type": "QuantitativeValue",
+            value: 8,
+          },
+          numberOfBedrooms: 2,
+          numberOfBathroomsTotal: 2,
+          floorSize: {
+            "@type": "QuantitativeValue",
+            value: 90,
+            unitCode: "MTK",
+          },
+          amenityFeature,
         },
       },
       {
